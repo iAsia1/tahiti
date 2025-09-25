@@ -1,0 +1,170 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(43, 43, 43);
+    padding: 50px 200px 50px 200px;
+/* top | right | bottom | left */
+}
+
+a {
+  color: rgb(217, 34, 34);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.selected {
+  border-bottom: solid 5px rgb(217, 34, 34);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0px !important;
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 2px;
+  padding: 2px;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 600px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+header, aside, article, footer {
+    display:block;
+    padding: 10px;
+    background: #000000 !important;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.021) 0%, rgba(0, 0, 0, 0.103) 100%) !important;
+    border-radius: 7px;
+    margin:2px;
+    border: solid 1px rgba(0, 0, 0, 0.185);
+}
+
+ol li {
+  padding-left:20px;
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  padding-bottom:0px;
+}
+aside {
+  grid-area: menu;
+}
+article {
+  grid-area: content;
+}
+footer {
+  grid-area: footer;
+  background: #000000 !important;
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.021) 0%, rgba(0, 0, 0, 0.103) 100%) !important;
+}
+
+.material-icons-outlined {
+    vertical-align: bottom;
+}
+
+
+.slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -90px;
+  padding: 75px 16px 75px 16px;
+/* top | right | bottom | left */
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  background-color: #00000080;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0px 2px 2px 0px;
+}
+
+.next {
+  right: 0;
+  border-radius: 2px 0px 0px 2px;
+}
+
+
+/* FOR MEDIUM DISPLAYS */
+@media screen and (max-width: 1800px) {
+body {
+    padding: 40px;
+}
+}
+
+/* FOR SMALL DISPLAYS */
+@media screen and (max-width: 900px) {
+.container {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 500px;
+  max-height: 600px;
+}
+
+body {
+    padding: 20px;
+}
+
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column !important;
+}
+
+ul li a {
+  display: block;
+  text-align: center;
+  padding: 4px;
+}
+
+.selected {
+  border-bottom: none;
+  border-left: solid 5px rgb(217, 34, 34);
+}
+
+}
