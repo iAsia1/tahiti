@@ -1,0 +1,24 @@
+WIKI PAGE IF YOU NEED IT
+
+<b>About</b><br>
+            Tahiti is the largest island of the Windward group of the Society Islands in French Polynesia, an overseas collectivity of France. It is located in the central part of the Pacific Ocean and the nearest major landmass is the North Island of New Zealand. The island was formed from volcanic activity in two overlapping parts, Tahiti Nui (bigger, northwestern part) and Tahiti Iti (smaller, southeastern part); it is high and mountainous with surrounding coral reefs. Its population was 189,517 in 2017, making it by far the most populous island in French Polynesia and accounting for 68.7% of its total population; the 2022 Census recorded a population of 191,779.<br>
+            <br>
+            Tahiti is the economic, cultural, and political centre of French Polynesia. The capital of French Polynesia, Pape'ete, is located on the northwest coast of Tahiti. The only international airport in the region, Fa'a'ā International Airport, is on Tahiti near Pape'ete. Tahiti was originally settled by Polynesians between 900 and 1100 CE. They represent about 70% of the island's population, with the rest made up of Europeans, Chinese and those of mixed heritage. The island was part of the Kingdom of Tahiti until its annexation by France in 1880, when it was proclaimed a colony of France, and the inhabitants became French citizens. French is the sole official language, although the Tahitian language (Reo Tahiti) is also widely spoken.<br>
+            <br>
+
+SLIDESHOW HEADER
+                <div class="article-header"><b>Welcome to Tahiti!</b></div>
+
+OLD WEATHER WIDGET
+
+            <a class="weatherwidget-io" href="https://forecast7.com/en/n17d55n149d56/papeete/" data-label_1="PAPEETE" data-label_2="WEATHER" data-theme="weather_one" style="border-radius:5px;">PAPEETE WEATHER</a>
+            <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
+
+OLD ABOUT TEXT
+            <div class="article-header"><b>About</b></div>
+            Tahiti isn’t just a stop on the map—it’s the beating heart of French Polynesia and the kind of place that grabs hold of you the moment you arrive. Picture emerald mountains rising from the sea, black-sand beaches shimmering under the sun, and lagoons so clear they look like glass. Add in the scent of tiare blossoms drifting through the air, and you’ll understand why so many travelers call this island paradise. For adventurers, Tahiti is pure adrenaline. Hike into lush valleys where waterfalls tumble from volcanic cliffs, or head out onto the waves at Teahupo’o—home to one of the most legendary surf breaks in the world. If you prefer life under the surface, Tahiti’s coral reefs and vibrant marine life make it a diver’s dream. Every turn feels like a new chance to explore.
+            But the island isn’t only about adventure—it’s also about connection and culture. In Papeete’s bustling market, you’ll find tropical fruit, handcrafted jewelry, and the warm smiles of locals ready to share their traditions. Polynesian dance, tattooing, and music are woven into daily life, offering visitors more than just a glimpse—they’re an invitation to join in.
+            Of course, Tahiti also knows how to slow things down. Overwater bungalows perched above turquoise lagoons offer a front-row seat to unforgettable sunsets, while quiet beaches invite you to simply breathe and let time melt away. Whether you’re celebrating romance, seeking renewal, or just craving a change of pace, Tahiti delivers it with ease. Welcome to Tahiti, and enjoy!
+            <br>

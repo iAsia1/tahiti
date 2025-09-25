@@ -1,0 +1,231 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(43, 43, 43);
+    padding: 50px 100px 50px 100px;
+    /* top | right | bottom | left */
+}
+a {
+  color: rgb(217, 34, 34);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* website layout */
+.container {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "menu1 content menu2"
+    "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 1px;
+}
+
+/* components */
+header, aside, article, footer {
+    display:block;
+    padding: 10px;
+    background: #000000 !important;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.05) 100%) !important;
+    border-radius: 10px;
+    margin: 1.5px;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+}
+  /* component specific styles */
+header {
+  grid-area: header;
+  padding-bottom:0px;
+  border: solid 1px transparent !important;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.2) !important;
+  background: transparent !important;
+  border-radius: 0px;
+}
+aside.side1 {
+  grid-area: menu1;
+}
+aside.side2 {
+  grid-area: menu2;
+}
+article {
+  grid-area: content;
+}
+footer {
+  grid-area: footer;
+  border: solid 1px transparent !important;
+  background: transparent !important;
+  border-top: solid 1px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 0px;
+}
+/* component headers */
+.article-header {
+  text-align: center;
+}
+.flag {
+  margin-right: 20px;
+}
+
+
+h2 {
+  margin-block-start: 0em;
+  margin-block-end: 0.2em;
+}
+
+/* navbar */
+ul {
+  list-style-type: none;
+  padding-inline-start: 0px !important;
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
+}
+ul li {
+  float: left;
+}
+ul li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+  /* icons */
+.material-icons-outlined {
+    vertical-align: bottom;
+}
+  /* tab look on selected */
+.selected {
+  border-bottom: solid 3px rgb(217, 34, 34);
+}
+ul li:hover {
+  border-bottom: solid 3px rgb(217, 34, 34);
+}
+ul li:active {
+  background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, rgba(217, 34, 34, 0.25) 100%);
+}
+
+
+
+/* index > slideshow */
+.mySlides img {
+  width: 100% !important;
+  min-height: 620px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+  /* previous and next buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -90px;
+  padding: 75px 15px 75px 15px;
+/* top | right | bottom | left */
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  background-color: #000000af;
+}
+.prev {
+  left: 0;
+  border-radius: 0px 5px 5px 0px;
+}
+.next {
+  right: 0;
+  border-radius: 5px 0px 0px 5px;
+}
+
+/* home > newsfeed */
+.newsfeed {
+  width: auto;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  background-color:rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 4px;
+}
+
+.feed-item-title {
+  font-size: 12px;
+  font-family: Tahoma;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left:10px;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+
+/* destinations > list */
+ol li {
+  padding-left:20px;
+}
+
+
+
+
+/* FOR MEDIUM DISPLAYS */
+@media screen and (max-width: 1800px) {
+/* adjusting padding to 40px */
+body {
+    padding: 25px;
+}
+}
+
+/* FOR SMALL DISPLAYS */
+@media screen and (max-width: 900px) {
+/* adjusting padding to 10px */
+body {
+    padding: 10px;
+}
+
+/* changes display to flex */
+.container {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.flag {
+  width: 150px !important;
+}
+
+/* navbar */
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column !important;
+  margin-top: 45px !important;
+}
+ul li a {
+  display: block;
+  text-align: center;
+  padding: 4px;
+}
+.selected {
+  border-bottom: none;
+  border-left: solid 5px rgb(217, 34, 34);
+}
+
+/* index > slideshow */
+.mySlides img {
+  width: 100%;
+  height: 500px;
+  max-height: 600px;
+}
+
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tahiti</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+        <link rel="icon" type="image/x-icon" href="img/icon.png">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="container">
+        <header class="header">
+            <img src="img/flag.png" width="85px" height="auto" style="float:left;"class="flag">
+            <h2>Visit Tahiti!</h2>
+            <i>Welcome to the official tourism web page for the island of Tahiti, a part of French Polynesia!</i>
+
+            <ul>
+                <li class="selected"><a href="#"><i class="material-icons-outlined">home</i> Home</a></li>
+                <li><a href="destinations.html"><i class="material-icons-outlined">location_on</i> Destinations</a></li>
+                <li><a href="#""><i class="material-icons-outlined">explore</i> Experiences</a></li>
+                <li><a href="#"><i class="material-icons-outlined">calendar_month</i> Booking</a></li>
+                <li><a href="#"><i class="material-icons-outlined">list_alt</i> Planning</a></li>
+                <li><a href="#"><i class="material-icons-outlined">bed</i> Accommodations</a></li>
+                <li><a href="#"><i class="material-icons-outlined">star_border</i> Specials</a></li>
+            </ul>
+        </header>
+
+        <aside class="side1">
+            <div class="article-header"><b>About</b></div>
+            Tahiti, the largest island in French Polynesia, is a paradise where lush mountains meet turquoise lagoons. Known as the “Queen of the Pacific,” it offers travelers a perfect blend of natural beauty, vibrant culture, and warm hospitality. The island is divided into two parts: Tahiti Nui, the bustling main section, and Tahiti Iti, a quieter, more secluded escape.<br>
+            <br>
+            Visitors are greeted by dramatic volcanic peaks, cascading waterfalls, and black-sand beaches that create a striking contrast with the crystal-clear waters. The capital city, Papeete, is alive with colorful markets, local crafts, and the irresistible aroma of Tahitian cuisine—fresh seafood, tropical fruits, and the famous poisson cru, a marinated fish dish. Adventure seekers can hike through lush valleys, surf world-class waves at Teahupo’o, or snorkel among vibrant coral reefs teeming with marine life. For those seeking relaxation, luxury resorts and overwater bungalows provide the ultimate retreat, offering breathtaking views of the lagoon and sunsets that paint the sky in shades of gold and crimson. Beyond its landscapes, Tahiti is rich in tradition. From mesmerizing Polynesian dance to the artistry of tattooing, the island’s culture is deeply woven into daily life. Tahiti isn’t just a destination—it’s an unforgettable experience of beauty, spirit, and connection.
+            <br>
+
+
+    </aside>
+
+        <article class="main"  style="display: flex;justify-content: center;align-items: center;">
+                <div class="slideshow">
+                <div class="mySlides">
+                    <img src="img/slides/img1.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="img/slides/img2.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="img/slides/img3.png">
+                </div>
+                <div class="mySlides">
+                    <img src="img/slides/img4.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="img/slides/img5.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+        </article>        
+        
+        <aside class="side2">
+            <div class="article-header"><b>Time and Weather</b></div>              
+            
+            <iframe src="https://free.timeanddate.com/clock/ia2wzozb/n278/fn14/fs16/fc000/tcfff/pa10/tt0/ta1/tb4" frameborder="0" width="100%" height="58" style="border-radius:5px;border: solid 1px rgba(0, 0, 0, 0.2);"></iframe>
+
+            <a class="weatherwidget-io" href="https://forecast7.com/en/n17d55n149d56/papeete/" data-label_1="PAPEETE" data-label_2="WEATHER" data-theme="pure" data-accent="rgba(0, 0, 0, 0.05)" style="width:100%;border-radius:5px;border: solid 1px rgba(0, 0, 0, 0.2);">PAPEETE WEATHER</a>
+            <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
+
+            <div class="newsfeed">
+            <script src="//rss.bloople.net/?url=https%3A%2F%2Frss.diffbot.com%2Fatom%3Furl%3Dhttps%3A%2F%2Fwww.euronews.com%2Ftag%2Ffrench-polynesia&striphtml=true&type=js"></script>
+        </div>
+    </aside>
+
+    </div>
+
+        <footer class="footer">
+            <img src="img/gov.png" style="float:right;">
+
+            <b>2025, VisitTahiti.com</b><br>
+            Paid for by the French Overseas Territories Tourism Board<br>
+
+        </footer>
+</div>
+
+        <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+    </body>
+</html>
